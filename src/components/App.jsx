@@ -17,7 +17,7 @@ function App() {
     pinned: true
   };
   const [notes, setNotes] = useState(
-    JSON.parse(localStorage.getItem("notes") || `${[sampleNote]}`)
+    JSON.parse(localStorage.getItem("notes")) || []
   );
   const [tags, setTags] = useState(
     JSON.parse(
